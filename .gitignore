@@ -1,0 +1,24 @@
+_site
+.sass-cache
+.jekyll-metadata
+
+db.csv
+db_blog.csv
+db_blog.xlsx
+gen_blog.py
+gen_table.py
+list.html
+daily.html
+table.html
+article_md/*
+article_material/*
+private.html
+private/*
+notes/*
+Gemfile.lock
+gen_sitemap.py
+
+# git repo
+*GPT*
+leetcode/
+coding/

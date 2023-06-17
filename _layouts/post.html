@@ -1,0 +1,58 @@
+
+{% assign cur_page = page.title %}
+{% assign cur_content = page.description %}
+{% include common/head.html %}
+{% include common/menu.html %}
+
+<head>
+  <style>
+    td, th {
+      border: 2px solid rgb(43, 41, 43);
+    }
+  </style>
+</head>
+
+<body>
+<div class="content-container">
+  <div class="content">
+    <div class="content-table flex-column">
+      {% if page.tag == "無線通訊"%}
+      <a href="/page/blog1.html"><h3 class="add-top-margin"> Back to Blog </h3> </a>
+      {% endif %}
+      {% if page.tag == "Book"%}
+      <a href="/page/blog2.html"><h3 class="add-top-margin"> Back to Blog </h3> </a>
+      {% endif %}
+      {% if page.tag == "Math"%}
+      <a href="/page/blog3.html"><h3 class="add-top-margin"> Back to Blog </h3> </a>
+      {% endif %}
+      {% if page.tag == "ICD"%}
+      <a href="/page/blog4.html"><h3 class="add-top-margin"> Back to Blog </h3> </a>
+      {% endif %}
+      
+      {% if page.prev_post %}
+      <a href={{page.prev_post}}><h3 class="add-top-margin"> Prev Post </h3> </a>
+      {% endif %}
+      
+      {{ content }}
+      
+      {% if page.next_post %}
+      <a href={{page.next_post}}><h3 class="add-top-margin"> Next Post </h3> </a>
+      {% endif %}
+
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6874820677261777"
+            crossorigin="anonymous"></script>
+      <!-- AdSense -->
+      <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-6874820677261777"
+            data-ad-slot="1955485350"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+      <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+
+    </div>
+  </div>
+</div>
+</body>

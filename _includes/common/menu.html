@@ -1,0 +1,44 @@
+<div class="menu-container">
+    <div class="menu">
+      <div class="menu-table flex-row-space-between">
+        <div class="logo flex-row-center">
+        </div>
+        <div class="menu-items flex-row-center flex-item">
+          {% if cur_page == "Home" %}
+          <a href="/" class="menu-index">Home</a>
+          {% else %}
+          <a href="/" class="menu-widget">Home</a>
+          {% endif %}
+          {% if cur_page == "Course" %}
+          <a href="/page/sortable.html" class="menu-index">Course</a>
+          {% else %}
+          <a href="/page/sortable.html" class="menu-widget">Course</a>
+          {% endif %}
+          <!-- {% if cur_page == "Blog" %}
+          <a href="/page/blog.html" class="menu-index">Blog</a>
+          {% else %}
+          <a href="/page/blog.html" class="menu-widget">Blog</a>
+          {% endif %} -->
+          <a href="https://www.linkedin.com/in/linkingmon/" class="floating-icon">
+            <img src="/images/linkedin-ico.png" alt="Floating Icon 1" width="22"> 
+          </a>
+          <a href="https://github.com/linkingmon" class="floating-icon">
+            <img src="/images/github-ico.png" alt="Floating Icon 2" width="22">
+          </a>
+          <a href="https://www.facebook.com/mon.linking/" class="floating-icon">
+            <img src="/images/fb-ico.png" alt="Floating Icon 3" width="22">
+          </a>
+          <a href="https://calendar.google.com/calendar/u/0?cid=bGlua2luZ21vbjE5OTdAZ21haWwuY29t" class="floating-icon">
+            <img src="/images/cal-ico.png" alt="Floating Icon 4" width="22">
+          </a>
+        </div> 
+      </div>
+    </div>
+  </div>
+<!-- 
+  
+  {% if menu.link == %}
+    <a href="{{ post.link }}">{{ title }}</a>
+  {% else %}
+    <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
+  {% endif %} -->

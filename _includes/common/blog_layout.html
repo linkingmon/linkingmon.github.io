@@ -1,0 +1,23 @@
+<div class="content-container">
+    <div class="content">
+        <div class="flex-row">
+            <div class="flex-item flex-column">
+                    <a href="/page/blog"><h3 class="add-top-margin"> Back to Homepage </h3> </a>
+                    {% for post in site.posts %}
+                    {% if post.tag == cur_tag %}
+                    <a href="{{ post.url | relative_url }}" rel="permalink" class="blog-link">
+                        <div class="title-container">
+                            <h3>{{ post.title }}</h3>
+                            <span>Posted on {{ post.month }} {{ post.day}}, {{ post.year}}</span>
+                        </div>
+                        <div class="image-container">
+                            <img src={{ post.image_path }} >
+                        </div>
+                    </a>
+                    {% else %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

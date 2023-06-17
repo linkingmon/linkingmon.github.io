@@ -1,0 +1,153 @@
+---
+layout: home # _layouts/home.html
+---
+
+{% assign cur_page = "Course" %}
+
+{% include common/head.html %}
+{% include common/menu.html %}
+
+<div class="content-container">
+<div class="content">
+	<div class="content-table flex-column">
+<div class="flip" data-panel="panel0"><h2><u>Taken Courses</u></h2></div>
+<div class="panel0">
+<table class="sortable">
+	<thead>
+		<tr>
+			<th>Course</th>
+			<th>Semester</th>
+			<th>Syl.</th>
+			<th>note</th>
+			<th>HW</th>
+			<th>Proj.</th>
+			<th>ICD</th>
+			<th>EDA</th>
+			<th>COM</th>
+			<th>ML</th>
+			<th>CS</th>
+			<th>BIO</th>
+			<th>Other</th>
+		</tr>
+	</thead>
+	<tbody>
+		<!-- <td>✔</td> -->
+		<tr><td>Advanced Methods in Optimization Algorithms</td><td>2022 Spring (MS2)</td><td><a href="\syllabus\AMOA.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td><a href="\notes\AMOA.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td><a href="https://github.com/linkingmon/AMOA" target="_blank"><i class="fa fa-github" style="font-size:20px"></i></a><br></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td></td></tr>
+		<tr><td>Modern Spectral Analysis</td><td>2022 Spring (MS2)</td><td><a href="\syllabus\MSA.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td><a href="\notes\MSA.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td><a href="https://github.com/linkingmon/MSA2022" target="_blank"><i class="fa fa-github" style="font-size:20px"></i></a><br></td><td></td><td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td></tr>
+		<tr><td>Intro. to intelligent Vehicles</td><td>2021 Fall (MS2)</td><td><a href="\syllabus\ItIV.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td><a href="\notes\ItIV.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td><a href="https://github.com/linkingmon/ItIV" target="_blank"><i class="fa fa-github" style="font-size:20px"></i></a><br></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td></tr>
+		<tr><td>Fundamental of English Writing</td><td>2021 Fall (MS2)</td><td><a href="\syllabus\FEW.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td></tr>
+		<tr><td>Error Correction Code</td><td>2021 Fall (MS2)</td><td><a href="\syllabus\ECC.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td><a href="\notes\ECC.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td><a href="https://github.com/linkingmon/ECC" target="_blank"><i class="fa fa-github" style="font-size:20px"></i></a><br></td><td></td><td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td></tr>
+		<tr><td>Pattern Opposition and Infringment</td><td>2021 Spring (MS1)</td><td><a href="\syllabus\patent.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td></tr>
+		<tr><td>Adaptive Signal Processing</td><td>2020 Fall (MS1)</td><td><a href="\syllabus\ASP.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td></td><td><a href="https://github.com/linkingmon/ASP2020" target="_blank"><i class="fa fa-github" style="font-size:20px"></i></a><br></td><td></td><td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td></tr>
+		<tr><td>Multimedia SOC design</td><td>2020 Fall (MS1)</td><td><a href="\syllabus\MSOC.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td><a href="\notes\MSOC.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td><a href="https://github.com/linkingmon/MSOC2020" target="_blank"><i class="fa fa-github" style="font-size:20px"></i></a><br></td><td><a href="https://github.com/linkingmon/ReconNet-hls" target="_blank"><i class="fa fa-github" style="font-size:20px"></i></a><br></td><td>✔</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		<tr><td>Communication IC design</td><td>2020 Spring (BS4)</td><td><a href="\syllabus\CommIC.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td></td><td><a href="https://github.com/linkingmon/CommIC2020" target="_blank"><i class="fa fa-github" style="font-size:20px"></i></a><br></td><td></td><td>✔</td><td></td><td>✔</td><td></td><td></td><td></td><td></td></tr>
+		<tr><td>DSP in VLSI Design</td><td>2020 Spring (BS4)</td><td><a href="\syllabus\DSPVLSI.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td></td><td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		<tr><td>Physical Design</td><td>2020 Spring (BS4)</td><td></td><td></td><td><a href="https://github.com/linkingmon/PD2020" target="_blank"><i class="fa fa-github" style="font-size:20px"></i></a><br></td><td><a href="https://github.com/linkingmon/PD20_project" target="_blank"><i class="fa fa-github" style="font-size:20px"></i></a><br></td><td></td><td>✔</td><td></td><td></td><td></td><td></td><td></td></tr>
+		<tr><td>Special Project - CA classification</td><td>2020 Spring (BS4)</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td>✔</td><td></td></tr>
+		<tr><td>Computer Architecture</td><td>2019 Fall (BS4)</td><td><a href="\syllabus\CA.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td></td><td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		<tr><td>Special Project - CA classification</td><td>2019 Fall (BS4)</td><td></td><td></td><td></td><td><a href="https://github.com/linkingmon/CNN-GAP" target="_blank"><i class="fa fa-github" style="font-size:20px"></i></a><br></td><td></td><td></td><td></td><td>✔</td><td></td><td>✔</td><td></td></tr>
+		<tr><td>Computer-aided VLSI System Design</td><td>2019 Fall (BS4)</td><td><a href="\syllabus\CVSD.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td></td><td></td><td><a href="https://github.com/linkingmon/MEMC" target="_blank"><i class="fa fa-github" style="font-size:20px"></i></a><br></td><td>✔</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		<tr><td>Classical Aesthetics</td><td>2019 Fall (BS4)</td><td><a href="\syllabus\AES.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td><a href="\notes\Classical Aesthetics.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td></tr>
+		<tr><td>Communication Lab</td><td>2019 Spring (BS3)</td><td></td><td></td><td><a href="https://github.com/linkingmon/CommLab" target="_blank"><i class="fa fa-github" style="font-size:20px"></i></a><br></td><td><a href="https://github.com/linkingmon/Comm_project" target="_blank"><i class="fa fa-github" style="font-size:20px"></i></a><br></td><td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td></tr>
+		<tr><td>Intro. to Philosophy</td><td>2019 Spring (BS3)</td><td><a href="\syllabus\philo.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td></tr>
+		<tr><td>Intro. to EDA</td><td>2019 Spring (BS3)</td><td><a href="\syllabus\EDA.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td></td><td></td><td><a href="https://github.com/linkingmon/EDA_project" target="_blank"><i class="fa fa-github" style="font-size:20px"></i></a><br></td><td></td><td>✔</td><td></td><td></td><td></td><td></td><td></td></tr>
+		<tr><td>Computer Network</td><td>2019 Spring (BS3)</td><td><a href="\syllabus\network.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td><a href="\notes\Computer Network.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td></td><td><a href="https://github.com/linkingmon/Network_project" target="_blank"><i class="fa fa-github" style="font-size:20px"></i></a><br></td><td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td></tr>
+		<tr><td>Special Project - QCLDPC</td><td>2019 Spring (BS3)</td><td></td><td></td><td></td><td><a href="https://github.com/linkingmon/QCLDPC" target="_blank"><i class="fa fa-github" style="font-size:20px"></i></a><br></td><td>✔</td><td></td><td>✔</td><td></td><td></td><td></td><td></td></tr>
+		<tr><td>Machine Learning</td><td>2019 Spring (BS3)</td><td></td><td></td><td><a href="https://github.com/linkingmon/ML2019SPRING" target="_blank"><i class="fa fa-github" style="font-size:20px"></i></a><br></td><td><a href="https://github.com/WenChiao/ML2019-final" target="_blank"><i class="fa fa-github" style="font-size:20px"></i></a><br></td><td></td><td></td><td></td><td>✔</td><td></td><td></td><td></td></tr>
+		<tr><td>Digital Circuits Lab</td><td>2018 Fall (BS3)</td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		<tr><td>Data Structure and Programming</td><td>2018 Fall (BS3)</td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td></td><td>✔</td><td></td><td></td></tr>
+		<tr><td>IC Design</td><td>2018 Fall (BS3)</td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		<tr><td>Principle of Communication</td><td>2018 Fall (BS3)</td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td></tr>
+		<tr><td>Algorithm</td><td>2018 Spring (BS2)</td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td></td><td>✔</td><td></td><td></td></tr>
+		<tr><td>Intro. to bio-engineering</td><td>2018 Spring (BS2)</td><td></td><td><a href="\notes\Bio Intro.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td></td></tr>
+		<tr><td>Classical Dynamics</td><td>2017 Fall (BS2)</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td></tr>
+		<tr><td>Intro. to computer programming</td><td>2017 Fall (BS2)</td><td></td><td></td><td></td><td><a href="https://github.com/linkingmon/Tetris-Battle" target="_blank"><i class="fa fa-github" style="font-size:20px"></i></a><br></td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td></td></tr>
+		
+	</tfoot>
+</table>
+</div>
+
+
+<div class="flip" data-panel="panel1"><h2><u>Self-Study & Audit Courses</u></h2></div>
+<div class="panel1">
+<table class="sortable">
+<thead>
+	<tr>
+		<th>Course</th>
+		<th>Semester</th>
+		<th>Syl.</th>
+		<th>note</th>
+		<th>HW</th>
+		<th>Proj.</th>
+		<th>ICD</th>
+		<th>EDA</th>
+		<th>COM</th>
+		<th>ML</th>
+		<th>CS</th>
+		<th>BIO</th>
+		<th>Other</th>
+	</tr>
+</thead>
+<tbody>
+	<!-- <td>✔</td> -->
+	<!-- <a href="\syllabus\SPPAR.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a> -->
+	<!-- <tr><td>COURSE</td><td>SEMESTER</td><td><a href="\syllabus\COURSE.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td><a href="\notes\COURSE.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td>HW</td><td>Proj</td><td>ICD</td><td>EDA</td><td>COM</td><td>ML</td><td>CS</td><td>BIO</td><td>--</td></tr> -->
+	<!-- <tr><td>Compiler</td><td>Stanford</td><td><a href="\syllabus\COURSE.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td><a href="\notes\COURSE.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td>HW</td><td>Proj</td><td>ICD</td><td>EDA</td><td>COM</td><td>ML</td><td>CS</td><td>BIO</td><td>--</td></tr> -->
+	<!-- <tr><td>Stategical Management</td><td>SEMESTER</td><td><a href="\syllabus\COURSE.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td><a href="\notes\COURSE.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td>HW</td><td>Proj</td><td>ICD</td><td>EDA</td><td>COM</td><td>ML</td><td>CS</td><td>BIO</td><td>--</td></tr> -->
+	<tr><td>Financial Management (in progress)</td><td>NTU Fin3001</td><td><a href="\syllabus\FM.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td><a href="\notes\Financial Management.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td></tr>
+	<tr><td>Real-Time Systems</td><td>NTU CSIE5063</td><td><a href="\syllabus\RTS.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a></td><td><a href="\notes\RTS\RTS.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td></td></tr>
+	<tr><td>Signal Processing for Phased Array Radar</td><td>2022 Spring (Audit)</td><td><a href="\syllabus\SPPAR.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td><a href="\notes\SPPAR\SPPAR.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a></td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td></tr>
+	<tr><td>Operation Management</td><td>NTU BA2005</td><td><a href="\syllabus\OM.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td><a href="\notes\Operation Management.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td></tr>
+	<tr><td>Bioelectronics Circuit Design</td><td>2021 Fall (Audit)</td><td><a href="\syllabus\BioC.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td></td><td></td><td></td><td>✔</td><td></td><td></td><td></td><td></td><td>✔</td><td></td></tr>
+	<tr><td>Quantum Information and Computation</td><td>2021 Spring (Audit)</td><td><a href="\syllabus\QIC.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td><a href="\notes\QIC\QIC.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td></tr>
+	<tr><td>Information Theory</td><td>2019 Fall (Audit)</td><td><a href="\syllabus\IT.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td>✔</td><td></td><td></td><td></td></tr>
+	<tr><td>Convex Optimization</td><td>CMU 10-725</td><td><a href="\syllabus\convex.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td></tr>
+	<tr><td>Artificial Intelligence</td><td>MIT 6.034</td><td><a href="\syllabus\AI.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td><a href="\notes\(MIT 6.034) Artificial Intelligence.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td>✔</td><td></td><td></td></tr>
+	<tr><td>Design and Analysis of Algorithms</td><td>MIT 6.046</td><td><a href="\syllabus\Algor.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td><a href="\notes\(MIT 6.046) Design and Analysis of Algorithms.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:18.5px"></i></a><br></td><td></td><td></td><td></td><td></td><td></td><td></td><td>✔</td><td></td><td></td></tr>
+	
+</tfoot>
+</table>
+</div>
+
+
+<div class="flip" data-panel="panel2"><h2><u>Coding</u></h2></div>
+<div class="panel2" style="display:none;">
+<ul style="list-style: none; padding: 0;">
+	<!-- <li style="margin-bottom: 5px;">
+		<a href="https://github.com/linkingmon/Leetcode" target="_blank">
+			<i class="fa fa-github" style="font-size:20px; margin-right: 5px;"></i> Leetcode
+		</a>
+	</li> -->
+	<li style="margin-bottom: 5px;">
+		<a href="https://github.com/linkingmon/ICC_Practice" target="_blank">
+			<i class="fa fa-github" style="font-size:20px; margin-right: 5px;"></i> IC contest practice
+		</a>
+	</li>
+	<li style="margin-bottom: 5px;">
+		<a href="https://github.com/linkingmon/codejam" target="_blank">
+			<i class="fa fa-github" style="font-size:20px; margin-right: 5px;"></i> Codejam practice
+		</a>
+	</li>
+</ul>
+</div>
+
+<div class="flip" data-panel="panel3"><h2><u>Developed Tools</u></h2></div>
+<div class="panel3">
+<ul style="list-style: none; padding: 0;">
+	<li style="margin-bottom: 5px;">
+		<a href="https://github.com/linkingmon/MATLAB_plot" target="_blank">
+			<i class="fa fa-github" style="font-size:20px; margin-right: 5px;"></i> MATLAB plotting scripts
+		</a>
+	</li>
+	<li style="margin-bottom: 5px;">
+		<a href="https://github.com/linkingmon/MI_Calculator" target="_blank">
+			<i class="fa fa-github" style="font-size:20px; margin-right: 5px;"></i> Matrix Inversion Algorithms
+		</a>
+	</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
