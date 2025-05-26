@@ -1,0 +1,114 @@
+{
+    "topics": [
+      {
+        "content": "I hold a master’s degree in Electrical Engineering, where I explored a broad range of topics including EDA, IC design, digital communication, and AI. During my graduate studies, I focused on digital IC design, developing and researching multiple hardware architectures with hands-on RTL and system-level implementation. \n\n In 2023, I began my professional career at Synopsys, working on the optimization engine for the Fusion Compiler, and targetting advanced node PPA. I am currently a Senior Software Engineer at Siemens.",
+        "fields": ["Bio"],
+        "links": [
+          { "label": "Email", "url": "mailto:linkingmon1997@gmail.com" },
+          { "label": "LinkedIn", "url": "https://linkedin.com/in/linkingmon" },
+          { "label": "GitHub", "url": "https://github.com/linkingmon" },
+          { "label": "LeetCode", "url": "https://leetcode.com/linkingmon" }
+        ]
+      },
+
+
+
+
+      {
+        "content": "Senior Software Engineer @ Siemens (2025/6 – Present)",
+        "fields": ["Work Experience"],
+        "links": []
+      },
+      {
+        "content": "Senior Software Engineer @ Synopsys (2023/2 – 2025/6)",
+        "fields": ["Work Experience"],
+        "links": []
+      },
+      {
+        "content": "Power Modeling Architect (Intern) @ Google (2022/9 – 2022/11)",
+        "fields": ["Work Experience"],
+        "links": []
+      },
+      {
+        "content": "Digital IC Designer (Intern) @ Tron Future Tech (2020/12 – 2022/8)",
+        "fields": ["Work Experience"],
+        "links": []
+      },
+
+
+
+
+
+      {
+        "content": "M.S. in Electronic Engineering @ NTU-GIEE (2020/9 – 2022/12)",
+        "fields": ["Education"],
+        "links": []
+      },
+      {
+        "content": "B.S. in Electrical Engineering @ NTU-EE (2016/9 – 2020/8)",
+        "fields": ["Education"],
+        "links": []
+      },
+
+
+
+
+
+      {
+        "content": "2022 Second Place – Cell Based IC Design Contest (Graduate)",
+        "fields": ["Awards"],
+        "links": []
+      },
+      {
+        "content": "2021 Honorable Mention Award – Cell Based IC Design Contest (Graduate)",
+        "fields": ["Awards"],
+        "links": []
+      },
+      {
+        "content": "2020 Second Place – Cell Based IC Design Contest (Undergraduate)",
+        "fields": ["Awards"],
+        "links": []
+      },
+      {
+        "content": "2015 Third Prize – High School Student Academic Competence Contest (Mathematics)",
+        "fields": ["Awards"],
+        "links": []
+      },
+      {
+        "content": "2015 Honorable Mention – 55th Senior High School Science Fair (Mathematics)",
+        "fields": ["Awards"],
+        "links": []
+      },
+
+
+
+
+
+      {
+        "content": "Y.-Y. Hsieh, Y.-C. Lin, and C.-H. Yang, JSSC 2023 — A 96.2nJ/class Neural Signal Processor with Adaptable Intelligence for Seizure Prediction",
+        "fields": ["Publications"],
+        "links": [{ "label": "paper", "url": "https://ieeexplore.ieee.org/document/9941187" }]
+      },
+      {
+        "content": "Y.-C. Lin, R.-H. Chiou, and C.-H. Yang, TVLSI 2024 — A High-Throughput Constructive Interference Precoder for 16×16 MU-MIMO Systems",
+        "fields": ["Publications"],
+        "links": [{ "label": "paper", "url": "https://ieeexplore.ieee.org/document/10596322" }]
+      },
+      {
+        "content": "Y.-C. Lin, R.-H. Chiou, Y.-C. Lin, and C.-H. Yang, VLSI TSA 2024 — A 919GMACs/J Reconfigurable SIMD Array Processor for Baseband Signal Processing",
+        "fields": ["Publications"],
+        "links": []
+      },
+      {
+        "content": "Y.-Y. Hsieh, Y.-C. Lin, and C.-H. Yang, ISSCC 2022 — A 96.2nJ/class Neural Signal Processor with Adaptable Intelligence for Seizure Prediction",
+        "fields": ["Publications"],
+        "links": [{ "label": "paper", "url": "https://ieeexplore.ieee.org/document/9731759" }]
+      },
+      {
+        "content": "Y.-C. Lin, Y.-C. Lee, W.-C. Tsai, W.-K. Beh, A.-Y. A. Wu, CinC 2020 — Explainable Deep Neural Network for Identifying Cardiac Abnormalities Using Class Activation Map",
+        "fields": ["Publications"],
+        "links": [{ "label": "paper", "url": "https://ieeexplore.ieee.org/document/9344377" }]
+      }
+    ]
+  }
+  

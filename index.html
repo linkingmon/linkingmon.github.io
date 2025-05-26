@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Timeline</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .bio-btn.active {
+      background-color: #bfdbfe; /* Tailwind's bg-blue-200 */
+    }
+  </style>
+  
+  <script>
+    function getIconUrl(label) {
+        const lower = label.toLowerCase();
+
+        if (lower.includes('linkedin')) return 'images/linkedin-ico.png';
+        if (lower.includes('email')) return 'images/gmail-ico.png';
+        if (lower.includes('github')) return 'images/github-ico.png';
+        if (lower.includes('leetcode')) return 'images/leetcode-ico.png';
+        if (lower.includes('paper')) return 'images/paper-ico.png';
+
+        return 'images/link-ico.png'; // default fallback
+    }
+
+    function renderBio(selectedField) {
+    // Deselect all
+    document.querySelectorAll('.bio-btn').forEach(btn => btn.classList.remove('active'));
+
+    // Highlight the selected one
+    document.querySelector(`.bio-btn[data-field="${selectedField}"]`)?.classList.add('active');
+
+    const container = document.getElementById('bio-content');
+    container.innerHTML = '';
+
+    const data = personalData
+        .filter(t => t.fields.includes(selectedField))
+        .sort((a, b) => new Date(b.time) - new Date(a.time));
+
+    const name = document.createElement('h1');
+    name.className = 'text-3xl font-bold text-blue-700';
+    name.textContent = 'Yu-Cheng Lin';
+    container.appendChild(name);
+
+    data.forEach(entry => {
+        const paragraph = document.createElement('p');
+        paragraph.className = 'mt-3 text-gray-800';
+
+        const textSpan = document.createElement('span');
+        if (selectedField === 'Bio') {
+            textSpan.innerHTML = entry.content.replace(/\n/g, '<br>');
+            paragraph.appendChild(textSpan);
+            paragraph.appendChild(document.createElement('br'));
+        } else if (selectedField === 'Publications') {
+            textSpan.innerHTML = entry.content.replace(/Y.-C. Lin/, '<strong>Y.-C. Lin</strong>');
+            paragraph.appendChild(textSpan);
+        } else {
+            textSpan.textContent = `• ${entry.content}`;
+            paragraph.appendChild(textSpan);
+        }
+
+        if (entry.links && entry.links.length > 0) {
+            entry.links.forEach(link => {
+            const a = document.createElement('a');
+            a.href = link.url;
+            a.target = '_blank';
+            a.className = 'ml-1 inline-block align-middle';
+
+            const img = document.createElement('img');
+            img.src = getIconUrl(link.label);
+            img.alt = link.label;
+            img.className = 'w-5 h-5 inline-block align-middle';
+            a.appendChild(img);
+
+            paragraph.appendChild(a);
+            paragraph.appendChild(document.createTextNode(' ')); // Add a space after the icon
+            });
+        }
+
+        container.appendChild(paragraph);
+        });
+}
+  </script>
+  <script>
+    let allData = [];
+    const fields = ['EDA', 'IC Design', 'Digital Comm.', 'Programming', 'AI', 'BIO', 'Other'];
+
+    async function loadTimeline() {
+      const response = await fetch('expert.json');
+      allData = (await response.json()).topics;
+      renderTimeline(fields[0]);
+    }
+
+    function renderTimeline(selectedField, shouldScroll = true) {
+      document.querySelectorAll('.field-btn').forEach(btn => btn.classList.remove('bg-blue-200'));
+      document.querySelector(`.field-btn[data-field="${selectedField}"]`)?.classList.add('bg-blue-200');
+
+      const container = document.getElementById('content');
+      container.innerHTML = '';
+
+      const section = document.createElement('section');
+      section.className = 'max-w-4xl mx-auto';
+      section.id = 'timeline-section';
+
+      const legend = document.createElement('div');
+      legend.className = 'flex gap-6 text-sm text-gray-600 mb-6 pl-6 pt-2 justify-end';
+      
+      legend.innerHTML = `
+      <div class="flex items-center gap-1">
+          <div class="w-3 h-3 rounded-full bg-blue-500"></div>
+          <span>Work/Research</span>
+      </div>
+      <div class="flex items-center gap-1">
+          <div class="w-3 h-3 rounded-full bg-green-500"></div>
+          <span>Taken Course</span>
+      </div>
+      <div class="flex items-center gap-1">
+          <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+          <span>Self-Study/Audit</span>
+      </div>
+      `;
+      section.appendChild(legend); // Add legend to the section before timeline
+
+      const timeline = document.createElement('div');
+      timeline.className = 'relative pl-6 space-y-10';
+
+      allData
+        .filter(t => t.fields.includes('') ||  t.fields.includes(selectedField))
+        .sort((a, b) => new Date(b.time) - new Date(a.time))
+        .forEach(topic => {
+          const block = document.createElement('div');
+          block.className = 'group relative';
+          const color = topic.type === 'Taken Course' ? 'green' : 
+            topic.type === 'Self-Study/Audit' ? 'yellow' : 
+            topic.type === 'Work' ? 'blue' : "gray";
+
+          block.innerHTML = `
+            <div class="flex items-start gap-4">
+                <!-- Time -->
+                <div class="w-28 text-right text-sm text-gray-500 flex-shrink-0 pt-1">
+                ${topic.time}
+                </div>
+
+                <!-- Marker and Content -->
+                <div class="relative flex-1 pl-4 border-l-2 border-${color}-300">
+                <div>
+                    <h3 class="text-xl font-semibold text-${color}-600">${topic.title}</h3>
+                    ${topic.summary ? `<p class="mt-2 text-gray-700">${topic.summary}</p>` : ''}
+                    <div class="mt-2 flex flex-wrap gap-2 items-center">
+                    ${(topic.links || []).map(link => {
+                        const icon = getIconUrl(link.label);
+                        return `<a href="${link.url}" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm">
+                                <img src="${icon}" alt="${link.label}" class="w-4 h-4 mr-1" />
+                                </a>`;
+                    }).join('')}
+                    </div>
+                </div>
+                </div>
+            </div>
+            `;
+
+          timeline.appendChild(block);
+        });
+
+      section.appendChild(timeline);
+      container.appendChild(section);
+
+      if (shouldScroll) {
+        setTimeout(() => {
+            document.getElementById('timeline-section')?.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    }
+
+    function setupNav() {
+        
+      const nav = document.getElementById('nav');
+      fields.forEach(field => {
+        const btn = document.createElement('button');
+        btn.innerText = field;
+        btn.className = 'field-btn px-5 py-2 rounded-full border text-base font-semibold text-gray-700 bg-gray-50 hover:bg-blue-100 transition';
+        btn.setAttribute('data-field', field);
+        btn.onclick = () => renderTimeline(field);
+        nav.appendChild(btn);
+      });
+    }
+
+    window.onload = () => {
+      setupNav();
+        Promise.all([
+            fetch('expert.json').then(res => res.json()),
+            fetch('personal.json').then(res => res.json())
+        ]).then(([expert, personal]) => {
+            allData = expert.topics;
+            personalData = personal.topics;
+            renderTimeline('EDA', false); // or your default expert field
+            renderBio('Bio');             // 👈 loads personal bio into bio-content
+        });
+    }
+  </script>
+</head>
+
+<body class="bg-white text-gray-900 text-lg">
+  <!-- Bio Section -->
+  <section class="max-w-4xl mx-auto mt-10 px-6" id="bio-section">
+    <div class="flex flex-col md:flex-row items-start gap-6">
+      <img src="images/selfie.jpg" alt="My Photo" class="w-50 h-40 rounded-lg object-cover border-1 border-blue-500 shadow" />
+        <div class="flex-1 flex flex-col md:flex-row gap-6">
+            <div class="flex-1" id="bio-content">
+              <!-- Bio content will be dynamically inserted here -->
+            </div>
+            <div id="bio-buttons" class="flex flex-col gap-2 ml-4">
+                <button onclick="renderBio('Bio')" data-field="Bio" class="bio-btn text-sm px-3 py-1 rounded bg-blue-50 hover:bg-blue-100 text-blue-700">Bio</button>
+                <button onclick="renderBio('Work Experience')" data-field="Work Experience" class="bio-btn text-sm px-3 py-1 rounded bg-blue-50 hover:bg-blue-100 text-blue-700">Work Experience</button>
+                <button onclick="renderBio('Education')" data-field="Education" class="bio-btn text-sm px-3 py-1 rounded bg-blue-50 hover:bg-blue-100 text-blue-700">Education</button>
+                <button onclick="renderBio('Awards')" data-field="Awards" class="bio-btn text-sm px-3 py-1 rounded bg-blue-50 hover:bg-blue-100 text-blue-700">Awards</button>
+                <button onclick="renderBio('Publications')" data-field="Publications" class="bio-btn text-sm px-3 py-1 rounded bg-blue-50 hover:bg-blue-100 text-blue-700">Publications</button>
+              </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="my-12 border-t border-gray-300 w-3/4 mx-auto" />
+  <!-- Field Navigation -->
+  <section class="max-w-4xl mx-auto mt-8 px-6">
+    <div class="flex flex-wrap justify-center gap-4" id="nav"></div>
+  </section>
+
+  <main id="content" class="mt-12 px-6"></main>
+</body>
+</html>

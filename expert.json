@@ -1,0 +1,394 @@
+{
+    "topics": [
+
+
+      {
+        "title": "Advanced node PPA Supports",
+        "time": "2023-08",
+        "summary": "During these two years, I focused on PPA optimization for advanced technology nodes. Responsibilities included in-depth analysis of PPA metrics, bug identification, and cross-team collaboration with timing analysis, placement, legalization, and routing teams to drive full-flow improvements.",
+        "type": "Work",
+        "fields": ["EDA"]
+      },
+
+
+
+
+
+      {
+        "title": "Deep-Learning Aided ADCs and RF Calibration",
+        "time": "2021-12",
+        "summary": "A half-year research project focused on developing RF calibration techniques enhanced by AI-driven algorithms.",
+        "type": "Work",
+        "fields": ["Digital Comm."],
+        "links": [
+          { "label": "github", "url": "https://github.com/linkingmon/Deep_ADC" },
+          { "label": "github", "url": "https://github.com/linkingmon/RFC" }
+        ]
+      },
+      {
+        "title": "A reconfigurable SIMD Array Processor for Baseband Signal Processing",
+        "time": "2021-12",
+        "summary": "A one-year research project dedicated to designing a reconfigurable array processor capable of executing various communication algorithms such as matrix multiplication, inversion, and FFTs, etc. The architecture was optimized for high energy efficiency and broad computational flexibility.",
+        "type": "Work",
+        "fields": ["IC Design", "Digital Comm."],
+        "links": [
+          { "label": "github", "url": "https://github.com/linkingmon/BAP" }
+        ]
+      },
+      {
+        "title": "Low-power matrix inversion module design",
+        "time": "2020-12",
+        "summary": "A half-year research focused on developing an energy-efficient matrix inversion module tailored for integration in a seizure detection chip.",
+        "type": "Work",
+        "fields": ["IC Design", "BIO"],
+        "links": [
+          { "label": "github", "url": "https://github.com/linkingmon/LPMIU" },
+          { "label": "paper", "url": "https://ieeexplore.ieee.org/document/9941187" },
+          { "label": "paper", "url": "https://ieeexplore.ieee.org/document/9731759" }
+        ]
+      },
+      {
+        "title": "A High-throughput Constructive Interference Precoder for MU-MIMO Systems",
+        "time": "2019-12",
+        "summary": "A one-year research focused on implementing constructive interference (CI) precoding algorithms for MU-MIMO systems. The work involved hardware-friendly algorithm, architectural design and hardware implementation to achieve high throughput.",
+        "type": "Work",
+        "fields": ["IC Design", "Digital Comm."],
+        "links": [
+          { "label": "github", "url": "https://github.com/linkingmon/CIP" },
+          { "label": "github", "url": "https://github.com/linkingmon/CI_precoding" },
+          { "label": "paper", "url": "https://ieeexplore.ieee.org/document/10596322" }
+        ]
+      },
+
+
+
+      {
+        "title": "Advanced Methods in Optimization Algorithms",
+        "time": "2022-02",
+        "summary": "This course covered heuristic-based optimization techniques such as ant colony optimization, partical swarm, genetic algorithms, and simulated annealing, emphasizing their applications in solving complex optimization problems.",
+        "type": "Taken Course",
+        "fields": ["Programming"],
+        "links": [
+          { "label": "github", "url": "https://github.com/linkingmon/AMOA" }
+        ]
+      },
+      {
+        "title": "Modern Spectral Analysis",
+        "time": "2022-02",
+        "type": "Taken Course",
+        "fields": ["Digital Comm."],
+        "links": [
+          { "label": "github", "url": "https://github.com/linkingmon/MSA2022" }
+        ]
+      },
+      {
+        "title": "Intro. to Intelligent Vehicles",
+        "time": "2021-08",
+        "type": "Taken Course",
+        "fields": ["Digital Comm."],
+        "links": [
+          { "label": "github", "url": "https://github.com/linkingmon/ItIV" }
+        ]
+      },
+      {
+        "title": "Fundamental of English Writing",
+        "time": "2021-08",
+        "type": "Taken Course",
+        "fields": ["Other"]
+      },
+      {
+        "title": "Error Correction Code",
+        "time": "2021-08",
+        "type": "Taken Course",
+        "fields": ["Digital Comm."],
+        "links": [
+          { "label": "github", "url": "https://github.com/linkingmon/ECC" }
+        ]
+      },
+      {
+        "title": "Pattern Opposition and Infringment",
+        "time": "2021-02",
+        "type": "Taken Course",
+        "fields": ["Other"]
+      },
+      {
+        "title": "Adaptive Signal Processing",
+        "time": "2020-08",
+        "type": "Taken Course",
+        "fields": ["Digital Comm."],
+        "links": [
+          { "label": "github", "url": "https://github.com/linkingmon/ASP2020" }
+        ]
+      },
+      {
+        "title": "Multimedia SOC design",
+        "time": "2020-08",
+        "summary": "This course combined SoC fundamentals with practical HLS-based hardware design. The first half covered communication protocols and SoC architecture. The second half focused on implementing hardware with C++ and Vivado HLS, deploying logic to FPGA boards. I have completed around 10 small HLS projects (see link). The final project applied HLS techniques to an AI-based compressive sensing problem (see link).",
+        "type": "Taken Course",
+        "fields": ["IC Design"],
+        "links": [
+          { "label": "github", "url": "https://github.com/linkingmon/MSOC2020" },
+          { "label": "github", "url": "https://github.com/linkingmon/ReconNet-hls" }
+        ]
+      },
+      {
+        "title": "Communication IC design",
+        "time": "2020-02",
+        "summary": "This course focused on classical communication IC architectures, such as FFT and quantization techniques. I have implemented BER simulations and designed FFT hardware architecture as part of the course assignments.",
+        "type": "Taken Course",
+        "fields": ["IC Design", "Digital Comm."],
+        "links": [
+          { "label": "github", "url": "https://github.com/linkingmon/CommIC2020" }
+        ]
+      },
+      {
+        "title": "DSP in VLSI Design",
+        "time": "2020-02",
+        "summary": "This is a theory-intensive course exploring architectural transformations for digital signal processing. Topics included unfolding, folding, scheduling and pipelining techniques, with a focus on mapping between different hardware architectures using formal transformation methods.",
+        "type": "Taken Course",
+        "fields": ["IC Design"]
+      },
+      {
+        "title": "Physical Design",
+        "time": "2020-02",
+        "summary": "This is an advanced course focused on classical and modern techniques for placement, floorplanning, legalization, and routing. We have implemented each major step through hands-on assignments (see link). The final project was part of a CAD contest, involving a challenging placement and routing problem (see link).",
+        "type": "Taken Course",
+        "fields": ["EDA"],
+        "links": [
+          { "label": "github", "url": "https://github.com/linkingmon/PD2020" },
+          { "label": "github", "url": "https://github.com/linkingmon/PD20_project" }
+        ]
+      },
+      {
+        "title": "Special Project - CA classification",
+        "time": "2020-02",
+        "summary": "A year-long AI research course focused on developing machine learning models to detect and classify abnormal cardiac signals. The course involved in-depth study of domain-specific biomedical knowledge, experimentation with various ML techniques, and efforts to enhance and explain existing algorithmic approaches through comparative analysis and model refinement.",
+        "type": "Taken Course",
+        "fields": ["AI", "BIO"],
+        "links": [
+          { "label": "paper", "url": "https://ieeexplore.ieee.org/document/9344377" }
+        ]
+      },
+      {
+        "title": "Computer Architecture",
+        "time": "2019-08",
+        "summary": "This is a theory-focused course centered on MIPS-based CPU design, including five-stage pipeline architecture, memory hierarchy, and instruction. Additional topics included compiler optimizations, SIMD scheduling, and branch prediction strategies, etc. The assignment involved RTL implementation of a simple single-stage MIPS CPU.",
+        "type": "Taken Course",
+        "fields": ["IC Design"]
+      },
+      {
+        "title": "Computer-aided VLSI System Design",
+        "time": "2019-08",
+        "summary": "This course focused on the practical use of EDA tools such as Design Compiler, Innovus, and Calibre. I have completed tool-driven assignments covering synthesis, APR, verification, and testing. The final project involved developing a motion estimation architecture from RTL design through synthesis, place-and-route, and LVS/DRC checking",
+        "type": "Taken Course",
+        "fields": ["IC Design", "EDA"]
+      },
+      {
+        "title": "Classical Aesthetics",
+        "time": "2019-08",
+        "type": "Taken Course",
+        "fields": ["Other"]
+      },
+      {
+        "title": "Communication Lab",
+        "time": "2019-02",
+        "summary": "A practical course focused on implementing classical signal processing algorithms, where we build system all the way from TX to RX, including quantization, modulation, constellation mapping, decoding and detection (see link). The final project involved the development of spectral analysis algorithms. (see link)",
+        "type": "Taken Course",
+        "fields": ["Digital Comm."],
+        "links": [
+          { "label": "github", "url": "https://github.com/linkingmon/CommLab" },
+          { "label": "github", "url": "https://github.com/linkingmon/Comm_project" }
+        ]
+      },
+      {
+        "title": "Intro. to Philosophy",
+        "time": "2019-02",
+        "type": "Taken Course",
+        "fields": ["Other"]
+      },
+      {
+        "title": "Intro. to EDA",
+        "time": "2019-02",
+        "summary": "This course provided a comprehensive overview of Electronic Design Automation, covering the entire flow from logic synthesis to placement, routing, chip manufacturing, and testing techniques. The final project involved implementing a rectilinear block merge and split algorithm (see link).",
+        "type": "Taken Course",
+        "fields": ["EDA"],
+        "links": [
+          { "label": "github", "url": "https://github.com/linkingmon/EDA_project" }
+        ]
+      },
+      {
+        "title": "Computer Network",
+        "time": "2019-02",
+        "summary": "This course covered foundational networking concepts, including different layered communication models and protocols. The final project involved developing a web-based live streaming chatroom integrated with a chatbot and a CNN-based facial expression detection system (the first time I build webpage , see link).",
+        "type": "Taken Course",
+        "fields": ["Digital Comm.", "Programming"],
+        "links": [
+          { "label": "github", "url": "https://github.com/linkingmon/Network_project" }
+        ]
+      },
+      {
+        "title": "Special Project - QCLDPC",
+        "time": "2019-02",
+        "summary": "An in-depth research and development course focused on Quasi-Cyclic LDPC (QCLDPC) error correction coding. The project involved studying classical decoding algorithms such as Sum-product, Min-Sum, normalized-MS and try to implement RTL architecture for QCLDPC decoders. (see link)",
+        "type": "Taken Course",
+        "fields": ["Digital Comm.", "IC Design"],
+        "links": [
+          { "label": "github", "url": "https://github.com/linkingmon/QCLDPC" }
+        ]
+      },
+      {
+        "title": "Machine Learning",
+        "time": "2019-02",
+        "summary": "An implementation-driven included regression, DNNs, CNNs, RNNs, VAE, PCA. Also some advanced model is studyied, such as generative adversarial networks (GANs), and reinforcement learning. The final project focused on building a deep learning model for image dehazing (see link).",
+        "type": "Taken Course",
+        "fields": ["AI"],
+        "links": [
+          { "label": "github", "url": "https://github.com/linkingmon/ML2019SPRING" },
+          { "label": "github", "url": "https://github.com/WenChiao/ML2019-final" }
+        ]
+      },
+      {
+        "title": "Digital Circuits Lab",
+        "time": "2018-08",
+        "summary": "Experimental course for Verilog and FPGA development, where I wrote RTL from scratch (the first time I write RTL), synthesized designs, and deployed them on FPGA boards. Assignments included implementing standard protocols such as I2S and I2C. Our final project combined monitors, speakers, and microphones to create an interactive singing game.",
+        "type": "Taken Course",
+        "fields": ["IC Design"]
+      },
+      {
+        "title": "Data Structure and Programming",
+        "time": "2018-08",
+        "summary": "This course focused on advanced C++ programming techniques and complex data structures. The final project involved implementing AIG (And-Inverter Graph) restructuring and optimization algorithms.",
+        "type": "Taken Course",
+        "fields": ["EDA", "Programming"]
+      },
+      {
+        "title": "IC Design",
+        "time": "2018-08",
+        "type": "Taken Course",
+        "fields": ["IC Design"]
+      },
+      {
+        "title": "Principle of Communication",
+        "time": "2018-08",
+        "summary": "A rigorous theory-driven course covering the mathematical foundations of communication systems, including probability, and linear algebra. Topics included decision theory, modulation techniques, filtering, decoding strategies, and constellation mapping, etc.",
+        "type": "Taken Course",
+        "fields": ["Digital Comm."]
+      },
+      {
+        "title": "Algorithm",
+        "time": "2018-02",
+        "summary": "This course covered classical algorithm and theory. The final project is a CAD Contest problem where we need to develop an efficient bus routing algorithm.",
+        "type": "Taken Course",
+        "fields": ["EDA", "Programming"]
+      },
+      {
+        "title": "Intro. to bio-engineering",
+        "time": "2018-02",
+        "type": "Taken Course",
+        "fields": ["BIO"]
+      },
+      {
+        "title": "Classical Dynamics",
+        "time": "2017-08",
+        "type": "Taken Course",
+        "fields": ["Other"]
+      },
+      {
+        "title": "Intro. to computer programming",
+        "time": "2017-08",
+        "summary": "An introductory course in C++ programming with a focus on object-oriented programming. For final project I build a Tetris battle game with C++ using OOP concepts (see link).",
+        "type": "Taken Course",
+        "fields": ["Programming"],
+        "links": [
+          { "label": "github", "url": "https://github.com/linkingmon/Tetris-Battle" }
+        ]
+      },
+
+
+
+      {
+        "title": "Working as Senior Software Enginner @ Siemens",
+        "time": "2025-06",
+        "type": "Milestone",
+        "fields": [""]
+      },
+      {
+        "title": "Working as Senior Software Enginner @ Synopsys",
+        "time": "2023-02",
+        "type": "Milestone",
+        "fields": [""]
+      },
+      {
+        "title": "Pursuing M.S. in Electronic Engineering @ NTU-GIEE",
+        "time": "2020-08",
+        "type": "Milestone",
+        "fields": [""]
+      },
+      {
+        "title": "Pursuing B.S. in Electrical Engineering @ NTU",
+        "time": "2016-08",
+        "type": "Milestone",
+        "fields": [""]
+      },
+
+
+
+
+      {
+        "title": "Real-Time Systems (NTU CSIE5063)",
+        "time": "2022-02",
+        "type": "Self-Study/Audit",
+        "fields": ["Other"]
+      },
+      {
+        "title": "Signal Processing for Phased Array Radar",
+        "time": "2022-02",
+        "type": "Self-Study/Audit",
+        "fields": ["Other"]
+      },
+      {
+        "title": "Operation Management (NTU BA2005)",
+        "time": "2022-02",
+        "type": "Self-Study/Audit",
+        "fields": ["Other"]
+      },
+      {
+        "title": "Bioelectronics Circuit Design",
+        "time": "2022-02",
+        "type": "Self-Study/Audit",
+        "fields": ["Other"]
+      },
+      {
+        "title": "Quantum Information and Computation",
+        "time": "2022-02",
+        "type": "Self-Study/Audit",
+        "fields": ["Other"]
+      },
+      {
+        "title": "Information Theory",
+        "time": "2022-02",
+        "type": "Self-Study/Audit",
+        "fields": ["Other"]
+      },
+      {
+        "title": "Convex Optimization (CMU 10-725)",
+        "time": "2020-02",
+        "type": "Self-Study/Audit",
+        "fields": ["Other"]
+      },
+      {
+        "title": "Artificial Intelligence (MIT 6.034)",
+        "time": "2019-08",
+        "type": "Self-Study/Audit",
+        "fields": ["Other"]
+      },
+      {
+        "title": "Design and Analysis of Algorithms (MIT 6.046)",
+        "time": "2019-08",
+        "type": "Self-Study/Audit",
+        "fields": ["Other"]
+      }
+
+    ]
+  }
+  
