@@ -11,7 +11,16 @@
       },
 
 
-
+      {
+        "title": "Modern C++",
+        "time": "2025-05",
+        "summary": "This is an self learning project based on chatGPT-generated modern C++ handout and combined it with hands-on practice. I implemented various coding exercises in modern C++ to deepen my understanding and improve my skills.",
+        "type": "Self-Study/Audit",
+        "fields": ["Programming"],
+        "links": [
+          { "label": "github", "url": "https://github.com/linkingmon/modernC" }
+        ]
+      },
 
 
       {
