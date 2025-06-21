@@ -96,7 +96,7 @@
       {
         "content": "Y.-C. Lin, R.-H. Chiou, Y.-C. Lin, and C.-H. Yang, VLSI TSA 2024 — A 919GMACs/J Reconfigurable SIMD Array Processor for Baseband Signal Processing",
         "fields": ["Publications"],
-        "links": []
+        "links": [{ "label": "paper", "url": "https://ieeexplore.ieee.org/document/10546457" }]
       },
       {
         "content": "Y.-Y. Hsieh, Y.-C. Lin, and C.-H. Yang, ISSCC 2022 — A 96.2nJ/class Neural Signal Processor with Adaptable Intelligence for Seizure Prediction",
