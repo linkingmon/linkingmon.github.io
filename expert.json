@@ -1,6 +1,20 @@
 {
     "topics": [
 
+      {
+        "title": "Multi-thread Non-determinism for Router Engine",
+        "time": "2025-9",
+        "summary": "",
+        "type": "Work",
+        "fields": ["EDA"]
+      },
+      {
+        "title": "Detail Routing and Graph Algorithms",
+        "time": "2025-06",
+        "summary": "",
+        "type": "Work",
+        "fields": ["EDA"]
+      },
 
       {
         "title": "Advanced node PPA Supports",
@@ -79,7 +93,7 @@
         "time": "2020-12",
         "summary": "A half-year research focused on developing an energy-efficient matrix inversion module tailored for integration in a seizure detection chip.",
         "type": "Work",
-        "fields": ["IC Design", "BIO"],
+        "fields": ["IC Design", "Bio"],
         "links": [
           { "label": "github", "url": "https://github.com/linkingmon/LPMIU" },
           { "label": "paper", "url": "https://ieeexplore.ieee.org/document/9941187" },
@@ -203,7 +217,7 @@
         "time": "2020-02",
         "summary": "A year-long AI research course focused on developing machine learning models to detect and classify abnormal cardiac signals. The course involved in-depth study of domain-specific biomedical knowledge, experimentation with various ML techniques, and efforts to enhance and explain existing algorithmic approaches through comparative analysis and model refinement.",
         "type": "Taken Course",
-        "fields": ["AI", "BIO"],
+        "fields": ["AI", "Bio"],
         "links": [
           { "label": "paper", "url": "https://ieeexplore.ieee.org/document/9344377" }
         ]
@@ -324,7 +338,7 @@
         "title": "Intro. to bio-engineering",
         "time": "2018-02",
         "type": "Taken Course",
-        "fields": ["BIO"]
+        "fields": ["Bio"]
       },
       {
         "title": "Classical Dynamics",
@@ -342,35 +356,6 @@
           { "label": "github", "url": "https://github.com/linkingmon/Tetris-Battle" }
         ]
       },
-
-
-
-      {
-        "title": "Working as Senior Software Enginner @ Siemens",
-        "time": "2025-06",
-        "type": "Milestone",
-        "fields": [""]
-      },
-      {
-        "title": "Working as Senior Software Enginner @ Synopsys",
-        "time": "2023-02",
-        "type": "Milestone",
-        "fields": [""]
-      },
-      {
-        "title": "Pursuing M.S. in Electronic Engineering @ NTU-GIEE",
-        "time": "2020-08",
-        "type": "Milestone",
-        "fields": [""]
-      },
-      {
-        "title": "Pursuing B.S. in Electrical Engineering @ NTU",
-        "time": "2016-08",
-        "type": "Milestone",
-        "fields": [""]
-      },
-
-
 
 
       {
@@ -407,7 +392,7 @@
         "title": "Information Theory",
         "time": "2022-02",
         "type": "Self-Study/Audit",
-        "fields": ["Other"]
+        "fields": ["Digital Comm."]
       },
       {
         "title": "Convex Optimization (CMU 10-725)",
