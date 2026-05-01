@@ -581,27 +581,30 @@ a:focus-visible {
   }
 
   .domains-grid {
-    display: grid;
-    position: static;
-    grid-template-columns: 1fr;
-    gap: 0.8rem;
-    height: auto;
-    max-width: 360px;
-    overflow: visible;
+    display: block;
+    position: relative;
+    height: 420px;
+    max-width: 100%;
+    overflow: hidden;
   }
 
   .domain-node {
-    position: relative;
-    left: auto;
-    right: auto;
-    top: auto;
-    aspect-ratio: 1.08 / 1;
-    width: 100%;
-    max-width: 340px;
-    min-height: 170px;
+    position: absolute;
+    aspect-ratio: 1 / 1;
+    width: min(42vw, 150px);
+    min-height: 0;
     border-radius: 999px;
-    margin: 0 auto;
+    margin: 0;
     transform: none;
+  }
+
+  .domain-hint {
+    display: none;
+  }
+
+  .domain-label {
+    font-size: clamp(0.72rem, 3.2vw, 0.95rem);
+    line-height: 1.05;
   }
 }
 

@@ -245,6 +245,93 @@ function domainBySlug(slug) {
   return DOMAIN_CONFIG.find((d) => d.slug === slug);
 }
 
+function layoutHomeNodes() {
+  const grid = document.getElementById("domains-grid");
+  if (!grid) return;
+
+  const nodes = Array.from(grid.querySelectorAll(".domain-node"));
+  if (!nodes.length) return;
+
+  const isPhone = window.matchMedia("(max-width: 560px)").matches;
+  const rect = grid.getBoundingClientRect();
+  const width = rect.width;
+  const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+
+  if (isPhone) {
+    const size = Math.round(Math.max(112, Math.min(168, width * 0.32)));
+    const height = Math.round(
+      Math.max(size * 2.45, Math.min(viewportHeight * 0.72, size * 3.2))
+    );
+    grid.style.height = `${height}px`;
+
+    console.log("[domain-layout]", {
+      mode: "phone",
+      gridWidth: Math.round(width),
+      gridHeight: Math.round(height),
+      viewportWidth: window.innerWidth,
+      viewportHeight,
+      nodeSize: size
+    });
+
+    const anchors = [
+      [0.12, 0.08],
+      [0.57, 0.04],
+      [0.3, 0.29],
+      [0.03, 0.54],
+      [0.52, 0.5],
+      [0.26, 0.75]
+    ];
+
+    nodes.forEach((node, idx) => {
+      const [ax, ay] = anchors[idx] || [0.25, 0.25];
+      const jitterX = (((idx * 37 + Math.round(width)) % 17) - 8) * 0.006;
+      const jitterY = (((idx * 29 + Math.round(width)) % 13) - 6) * 0.008;
+      const maxLeft = Math.max(0, width - size);
+      const maxTop = Math.max(0, height - size);
+      const left = Math.round(Math.min(maxLeft, Math.max(0, (ax + jitterX) * width)));
+      const top = Math.round(Math.min(maxTop, Math.max(0, (ay + jitterY) * height)));
+
+      node.style.width = `${size}px`;
+      node.style.left = `${left}px`;
+      node.style.top = `${top}px`;
+      node.style.setProperty("--node-size", `${size}px`);
+      node.style.animationName = "";
+      node.style.animationDuration = "";
+      node.style.animationDelay = "";
+      node.style.zIndex = String(10 + idx);
+    });
+    return;
+  }
+
+  console.log("[domain-layout]", {
+    mode: "desktop",
+    gridWidth: Math.round(width),
+    viewportWidth: window.innerWidth,
+    viewportHeight
+  });
+
+  grid.style.height = "";
+  nodes.forEach((node) => {
+    node.style.left = "";
+    node.style.top = "";
+    node.style.width = "";
+    node.style.removeProperty("--node-size");
+    node.style.animationName = "";
+    node.style.animationDuration = "";
+    node.style.animationDelay = "";
+    node.style.zIndex = "";
+  });
+}
+
+let layoutRaf = 0;
+function scheduleHomeLayout() {
+  if (layoutRaf) cancelAnimationFrame(layoutRaf);
+  layoutRaf = requestAnimationFrame(() => {
+    layoutHomeNodes();
+    layoutRaf = 0;
+  });
+}
+
 function renderHomeNodes() {
   const grid = document.getElementById("domains-grid");
   if (!grid) return;
@@ -267,6 +354,8 @@ function renderHomeNodes() {
 
     grid.appendChild(node);
   });
+
+  scheduleHomeLayout();
 }
 
 function linkSet(links) {
@@ -399,6 +488,7 @@ function renderDomainPage(slug, byCategory) {
 async function bootstrap() {
   injectHeader();
   renderHomeNodes();
+  window.addEventListener("resize", scheduleHomeLayout);
 
   const domainRoot = document.getElementById("domain-root");
   const aboutRoot = document.getElementById("about-root");
