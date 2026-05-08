@@ -2,16 +2,33 @@
     "topics": [
 
       {
+        "title": "Introduction to Linux kernel",
+        "time": "2026-6",
+        "summary": "Ongoing ... study linux kernel based on chatgpt-generated handout.",
+        "type": "Self-Study/Audit",
+        "fields": ["Programming"]
+      },
+      {
+        "title": "Local LLM and RAG System",
+        "time": "2026-5",
+        "summary": "Built a local LLM system with RAG capabilities by customizing and re-developed Open-WebUI for private, self-hosted AI workflows. The project focused on integrating local language models, designing system prompts, and adapting both native and non-native tool support, enabling the model to interact with external functions and structured workflows.",
+        "type": "Self-Study/Audit",
+        "fields": ["AI", "Programming"]
+      },
+
+
+
+      {
         "title": "Multi-thread Non-determinism for Router Engine",
         "time": "2025-9",
-        "summary": "",
+        "summary": "Investigated and improved non-deterministic behavior in detail routing engine, especially under multi-threaded execution.  The work involved analyzing root causes such as data races, ordering-dependent algorithms, uninitialized states, and other sources of unstable routing results. I designed and refined debugging strategies and algorithmic fixes to make routing behavior much more deterministic.",
         "type": "Work",
         "fields": ["EDA"]
       },
       {
         "title": "Detail Routing and Graph Algorithms",
         "time": "2025-06",
-        "summary": "",
+        "summary": "Developed graph-based algorithms, and rule-driven techniques such as sibling routing, wide-width rules, branch-type handling, and timing critical flags.",
         "type": "Work",
         "fields": ["EDA"]
       },
