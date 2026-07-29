@@ -1,7 +1,7 @@
 {
     "topics": [
       {
-        "content": "I hold a master’s degree in Electrical Engineering, where I explored a broad range of topics including EDA, IC design, digital communication, and AI. During my graduate studies, I focused on digital IC design, developing and researching multiple hardware architectures with hands-on RTL and system-level implementation. \n\n In 2023, I began my professional career at Synopsys, working on the optimization engine for the Fusion Compiler, and targetting advanced node PPA. I am currently a Senior Software Engineer at Siemens.",
+        "content": "I hold a master’s degree in Electrical Engineering, where I explored a broad range of topics including EDA, IC design, digital communication, and AI. During my graduate studies, I focused on digital IC design, developing and researching multiple hardware architectures with hands-on RTL and system-level implementation. \n\n In 2023, I began my professional career at Synopsys, working on the optimization engine for the Fusion Compiler, and targetting advanced node PPA. After that, I join Siemens in 2025, working on detail routing engines with a focus on multi-threaded non-determinism issues. \n\n In 2026, I join Google GPU System Software team.",
         "fields": ["Bio"],
         "links": [
           { "label": "Email", "url": "mailto:linkingmon1997@gmail.com" },
@@ -14,7 +14,12 @@
 
 
       {
-        "content": "Senior Software Engineer @ Siemens (2025/6 – Present)",
+        "content": "Software Engineer, III @ Google (2026/6 – Present)",
+        "fields": ["Work Experience"],
+        "links": []
+      },
+      {
+        "content": "Senior Software Engineer @ Siemens (2025/6 – 2026/6)",
         "fields": ["Work Experience"],
         "links": []
       },
